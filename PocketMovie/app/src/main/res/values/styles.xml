@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    !-- Defined a new style with three items of color. -->
+    <style name="ActionBAR" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/background_gray_fragement</item>
+    </style>
+
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray_fragement"
+    tools:context=".MovieDetailFragement">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/movieImage"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/movieTitle"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="214dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="180dp"
+            android:text="Title"
+            android:textSize="20sp"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+            android:id="@+id/MovieDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:text="Date"
+            android:textColor="@color/white" />
+    <TextView
+            android:id="@+id/MovieRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="Rating"
+            android:textColor="@color/white" />
+</RelativeLayout>
+        <TextView
+            android:id="@+id/movieOverview"
+            android:layout_width="365dp"
+            android:layout_height="255dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="14dp"
+            android:text="overview"
+            android:textColor="@color/white" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/MovieVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@color/background_gray_viewpager"
+                android:layout_marginLeft="12dp"
+                android:onClick="onPlayVideo"
+                android:text="Video" />
+
+            <CheckBox
+                android:id="@+id/MovieFavorit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="12dp"
+                android:backgroundTint="@android:color/white"
+                android:text="Pocket"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+
+</FrameLayout>
